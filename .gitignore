@@ -1,0 +1,20 @@
+# Dependencies (installed by npm, never committed)
+node_modules/
+
+# Build output
+frontend/dist/
+backend/target/
+
+# Local settings with passwords - never commit these
+backend/db.properties
+.env
+.env.*
+!.env.example
+
+# Editors and operating system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.log

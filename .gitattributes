@@ -1,0 +1,10 @@
+# Let git fix line endings so Windows and Linux (the hosting server) agree
+* text=auto
+
+# Shell scripts must keep Linux line endings or they fail on Linux and in git hooks
+mvnw text eol=lf
+.husky/* text eol=lf
+*.sh text eol=lf
+
+# Windows batch files keep Windows line endings
+*.cmd text eol=crlf
